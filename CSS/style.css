@@ -1,1 +1,7 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Gorditas&family=Josefin+Sans:wght@200&family=Montserrat:wght@200&family=Mukta:wght@200&family=Red+Hat+Mono:wght@300&family=Roboto+Slab:wght@100&family=Rubik+Glitch&family=Spline+Sans+Mono:wght@300&family=Titillium+Web:wght@200&display=swap");
+body {
+  font-weight: 600;
+  font-family: 'Roboto Slab', serif;
+}
+/*# sourceMappingURL=style.css.map */

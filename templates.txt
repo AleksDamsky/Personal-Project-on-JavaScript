@@ -1,2 +1,9 @@
 this project will be contain my first independent project which write on JS.
-I really want to learn React, JQerry, Angular, Vue.js
+I really want to learn React, JQerry, Angular, Vue.JS
+
+1. "камень, ножницы, бумага"
+2. Full web-site
+3. The basket for things
+4. Meditation time
+
+1) I choose meditation time, because this project very valid for beginner programmer.

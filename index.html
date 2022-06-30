@@ -5,10 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="JavaScript/parallax.js"></script>
     <title>Meditation site</title>
 </head>
 <body>
-    
+
+    <!-- Основной контейнер, в котором будет картинка, меню-бургер, лого -->
+    <div class="container">
+
+        <!-- ЛОго -->
+        <div class="container__logo">
+           <span class="container__logo-item">HRIPNV</span> 
+        </div>
+
+        <!-- Тут будет картинка для паралакса -->
+        <div class="container__meditationGirl"><!--картинка будет задаваться через background в css--></div>
+
+        <!-- тут находиться меню-бургер -->
+        <div class="container__menu">
+            <a href="#!" class="container__menu-btn"></a>
+        </div>
+
+    </div>
+
+
+    <!-- секция для таймера -->
+    <section class="section">
+
+        <div class="section__timer">
+
+            <div class="section__timer-block">
+
+                <div class="section__time hour">00</div>
+
+                <div class="section__title"></div>
+
+            </div>
+            <div class="section__timer-block">
+
+                <div class="section__time minute">00</div>
+
+                <div class="section__title"></div>
+
+            </div>
+            <div class="section__timer-block">
+
+                <div class="section__time seconds">00</div>
+
+                <div class="section__title"></div>
+
+            </div>
+            <div class="section__timer-block">
+
+                <div class="section__time milliseconds">00</div>
+
+                <div class="section__title"></div>
+
+            </div>
+
+        </div>
+
+        <div class="section__buttons">
+            <button class="section__startbtn">Start</button>
+            <button class="section__pausebtn">Pause</button>
+            <button class="section__stopbtn">Stop</button>
+        </div>
+
+    </section>
+
+
+    <!-- Секция, где будет подвал с ссылками на соц.сети -->
+    <footer class="footer">
+
+
+        <!-- ссылки на соцы -->
+        <nav class="footer__navigation">
+
+            <ul class="footer__list">
+
+                <li class="footer__list-item">
+                    <a href="https://vk.com/idhripnv" class="footer__list-link">VK</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="https://t.me/AleksDamsky" class="footer__list-link">Telegram</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="https://github.com/AleksDamsky" class="footer__list-link">GitHub</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </footer>
 
     <script src="JavaScript/index.js"></script>
 </body>
