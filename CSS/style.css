@@ -3,5 +3,143 @@
 body {
   font-weight: 600;
   font-family: 'Roboto Slab', serif;
+  background-color: #ffffff;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container__logo {
+  font-size: 25px;
+}
+
+.container__menu {
+  position: absolute;
+  right: 30px;
+}
+
+.container__menu-btn {
+  position: relative;
+  display: block;
+  background-color: #fff;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.container__span-btn {
+  position: absolute;
+  top: 25px;
+  margin-top: -1px;
+  width: 20px;
+  margin-left: 20px;
+  height: 2px;
+  background-color: black;
+}
+
+.container__span-btn:before, .container__span-btn:after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  margin-top: -1px;
+  width: 20px;
+  margin-left: 0px;
+  height: 2px;
+  background-color: black;
+}
+
+.container__span-btn:before {
+  -webkit-transform: translateY(7px);
+          transform: translateY(7px);
+}
+
+.main {
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 60%;
+  background-color: #ffffff;
+}
+
+.main__meditationGirl {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: 35vw auto;
+  background-image: url("../IMG/meditation girl.jpg");
+}
+
+.section {
+  position: absolute;
+  font-size: 70px;
+  top: 800px;
+  left: 500px;
+}
+
+.section__timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.section__buttons {
+  position: absolute;
+  left: 80px;
+}
+
+.section__startbtn, .section__stopbtn, .section__pausebtn {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background: white;
+  padding: 10px;
+}
+
+.section__startbtn:hover, .section__stopbtn:hover, .section__pausebtn:hover {
+  background-color: red;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer {
+  position: absolute;
+  top: 990px;
+  left: 500px;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__list-item {
+  padding-left: 55px;
+  padding-bottom: 30px;
+}
+
+.footer__list-link {
+  text-decoration: none;
+  color: black;
+}
+
+.footer__list-link:hover {
+  color: red;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,11 +2,135 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Gorditas&family=Josefin+Sans:wght@200&family=Montserrat:wght@200&family=Mukta:wght@200&family=Red+Hat+Mono:wght@300&family=Roboto+Slab:wght@100&family=Rubik+Glitch&family=Spline+Sans+Mono:wght@300&family=Titillium+Web:wght@200&display=swap');
 
-
-
+$white_color: #ffffff;
 
 //body style
 body{
     font-weight: 600;
     font-family: 'Roboto Slab', serif;
+    background-color: $white_color;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+
+    &__logo{
+        font-size: 25px;
+        // top: 20px;
+        // left: 20px;
+    };
+
+    &__menu{
+        position: absolute;
+        right: 30px;
+    }
+
+    &__menu-btn{
+        position: relative;
+        display: block;
+        background-color: #fff;
+        text-decoration: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    };
+
+    &__span-btn{
+        position: absolute;
+        top: 25px; margin-top: -1px;
+        width: 20px; margin-left: 20px;
+        height: 2px;
+        background-color: rgb(0, 0, 0);
+    };
+
+    &__span-btn:before,
+    &__span-btn:after{
+        content: '';
+        position: absolute;
+        top: 8px; margin-top: -1px;
+        width: 20px;margin-left: 0px;
+        height: 2px;
+        background-color: rgb(0, 0, 0);
+    }
+
+    &__span-btn:before{
+        transform: translateY(7px);
+    }
+}
+
+.main{
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 60%;
+    background-color: $white_color;
+
+    &__meditationGirl{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 100%;
+        background-position: center;
+        background-repeat: repeat-x;
+        background-size: 35vw auto;
+        background-image: url('../IMG/meditation\ girl.jpg');
+    }
+}
+
+.section{
+    position: absolute;
+    font-size: 70px;
+    top: 800px;
+    left: 500px;
+
+    &__timer{
+        display: flex;
+        justify-content: space-evenly;
+    };
+
+    &__buttons{
+        position: absolute;
+        left: 80px;
+    };
+
+    &__startbtn,
+    &__stopbtn,
+    &__pausebtn{
+        border: 1px solid #fff;
+        border-radius: 20px;
+        background: rgb(255, 255, 255);
+        padding: 10px;
+    }
+    &__startbtn:hover,
+    &__stopbtn:hover,
+    &__pausebtn:hover{
+        background-color: rgb(255, 0, 0);
+        transition: all 0.3s;
+    }
+}
+
+.footer{
+    position: absolute;
+    top: 990px;
+    left: 500px;
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    };
+
+    &__list-item{
+        padding-left: 55px;
+        padding-bottom: 30px;
+    };
+
+    &__list-link{
+        text-decoration: none;
+        color: black;
+    }
+    &__list-link:hover{
+        color: red;
+        transition: all 0.3s;
+        
+    }
 }
