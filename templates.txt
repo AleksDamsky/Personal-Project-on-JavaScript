@@ -1,0 +1,2 @@
+this project will be contain my first independent project which write on JS.
+I really want to learn React, JQerry, Angular, Vue.js
