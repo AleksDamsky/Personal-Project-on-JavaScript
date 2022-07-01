@@ -27,3 +27,12 @@ function setPosition(element, yPosition) {
     element.style.transform = `translate(0, ${yPosition.toFixed(1)}px, 0)`;
 
 }
+
+/*----------------------------------------------------------------------*/
+
+let addBtn = document.querySelector('.container__menu-btn');
+
+addBtn.addEventListener('click', function(event) {
+    event.preventDefault;
+    addBtn.toggleClass('active');
+})
